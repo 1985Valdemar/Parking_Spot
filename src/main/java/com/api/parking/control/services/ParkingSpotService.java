@@ -45,7 +45,6 @@ public class ParkingSpotService<ParkingSpotModelSpotModel> {
     public Optional<ParkingSpotModel> findById(UUID id) {
         return parkingSpotRepository.findById(id);
     }
-
     @Transactional//Metodo destrutivo para evitar bug
     public void delete(ParkingSpotModel parkingSpotModel) {
         parkingSpotRepository.delete(parkingSpotModel);
